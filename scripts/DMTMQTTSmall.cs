@@ -33,8 +33,8 @@ namespace M2MqttUnity.small
 
             brokerPort = 1883;
             // brokerAddress = "dmt.fh-joanneum.at";
-            // mqttUserName = "dmt";
-            //mqttPassword = "ss2021";
+            // mqttUserName = "xxx";
+            //mqttPassword = "xxx";
             isEncrypted = false;
             autoConnect = true;
 
