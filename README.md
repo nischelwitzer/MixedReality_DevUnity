@@ -11,6 +11,14 @@ MixedReality devlopment @ FH JOANNEUM, Nischelwitzer
 * Controller Tracking
 * Hand Tracking
 
+## Controller Interface
+
+* Step 1: Input Actions
+* Way 1: Controller Button Mapper
+  * CallBack Function
+* Way 2: Player Input
+  * Own Script: https://github.com/nischelwitzer/MixedReality_DevUnity/blob/main/scripts/controller/ControllerEventHandler.cs
+
 ## Finger
 
 ```
