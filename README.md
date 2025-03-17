@@ -11,15 +11,19 @@ MixedReality devlopment @ FH JOANNEUM, Nischelwitzer
 * Controller Tracking
 * Hand Tracking
 
-## Controller Interface
+## Controller Interface with Building Blocks
 
+* Building Block: Controller Tracking
+* Building Block: Controller Button Mapper
+* Add On BBlock: Haptic
+  
 <img src="./pics/inputActions.png" widht="500">
 
 * Step 1: Input Actions
-* Way 1: Controller Button Mapper
-  * CallBack Function
-* Way 2: Player Input
-  * Own Script: https://github.com/nischelwitzer/MixedReality_DevUnity/blob/main/scripts/controller/ControllerEventHandler.cs
+* Way 1: Controller Button Mapper (Building Block) 
+  * CallBack Function (Events) 
+* Way 2: Player Input (Script)
+  * Own Script with Event: https://github.com/nischelwitzer/MixedReality_DevUnity/blob/main/scripts/controller/ControllerEventHandler.cs
 
 ## Finger
 
