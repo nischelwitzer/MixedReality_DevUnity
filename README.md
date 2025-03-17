@@ -27,6 +27,7 @@ MixedReality devlopment @ FH JOANNEUM, Nischelwitzer
 
 ## Scenes with Mixed Reality Utility Kit (MRUK)
 
+* https://developers.meta.com/horizon/documentation/unity/unity-mr-utility-kit-overview/
 * MRUK > Core > Tools > Effect Mesh (Room Box Effects)
 * World Locking
 * Passthrough & use scene (android manifest) 
@@ -44,3 +45,4 @@ foreach (var bone in skeleton.Bones)
 ## Links and Infos
 
 * https://github.com/dilmerv/com.learnxr.core.git (Logger3D) Add package from git URL
+* https://www.youtube.com/@ValemTutorials 
