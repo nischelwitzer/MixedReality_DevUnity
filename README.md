@@ -1,4 +1,4 @@
-# MixedReality_DevUnity
+# MixedReality_DevUnity with Quest3 & Unity 
 
 MixedReality devlopment @ FH JOANNEUM, Nischelwitzer 
 
