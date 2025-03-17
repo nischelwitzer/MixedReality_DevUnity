@@ -1,4 +1,4 @@
-# MixedReality_DevUnity with Quest3 & Unity 
+# MixedReality_DevUnity with Meta  Quest3 & Unity & C#
 
 MixedReality devlopment @ FH JOANNEUM, Nischelwitzer 
 
@@ -25,7 +25,13 @@ MixedReality devlopment @ FH JOANNEUM, Nischelwitzer
 * Way 2: Player Input (Script)
   * Own Script with Event: https://github.com/nischelwitzer/MixedReality_DevUnity/blob/main/scripts/controller/ControllerEventHandler.cs
 
-## Finger
+## Scenes with Mixed Reality Utility Kit (MRUK)
+
+* MRUK > Core > Tools > Effect Mesh (Room Box Effects)
+* World Locking
+* Passthrough & use scene (android manifest) 
+
+## Hands and Fingers
 
 ```
 foreach (var bone in skeleton.Bones)
@@ -35,5 +41,6 @@ foreach (var bone in skeleton.Bones)
 
 * Player Wrapper
 
-# Meta SDK Quest3 C# Development
+## Links and Infos
 
+* https://github.com/dilmerv/com.learnxr.core.git (Logger3D) Add package from git URL
