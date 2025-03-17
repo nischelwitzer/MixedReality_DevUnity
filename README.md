@@ -13,6 +13,8 @@ MixedReality devlopment @ FH JOANNEUM, Nischelwitzer
 
 ## Controller Interface
 
+<img src="./pics/inputActions.png" widht="500">
+
 * Step 1: Input Actions
 * Way 1: Controller Button Mapper
   * CallBack Function
