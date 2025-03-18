@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DMTEventHelpers : MonoBehaviour
 {
@@ -17,6 +19,18 @@ public class DMTEventHelpers : MonoBehaviour
         this.gameObject.SetActive(myToggle);
     }
 
+
+    public void HelperSceneManager(string whichScene)
+    {
+        if (whichScene != "")
+        {
+            Debug.LogWarning("Trigger event fired: change Scene > " + whichScene);
+            SceneManager.LoadScene(whichScene);
+        }
+        else
+            Debug.LogError("DMTTriggerScene: no Scene Name specified!");
+    }
+    
     // Update is called once per frame
     public void HelperSize(float newSize)
     {
