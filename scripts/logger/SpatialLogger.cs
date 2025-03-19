@@ -1,10 +1,18 @@
-﻿using System.Linq;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using System;
 
 namespace LearnXR.Core.Utilities
 {
+    // based on
+    // Dilmer Valecillos
+    // https://github.com/dilmerv/com.learnxr.core/tree/master/Runtime/Scripts/Core/Utilities
+    // https://learnxr.com
+    // 
+    // Upate Nis
+    // catches all standard Logs Application.logMessageReceived
+
     public class SpatialLogger : Singleton<SpatialLogger>
     {
         [SerializeField] private TextMeshProUGUI debugAreaText;
@@ -18,6 +26,7 @@ namespace LearnXR.Core.Utilities
                 debugAreaText = GetComponent<TextMeshProUGUI>();
             }
             debugAreaText.text = string.Empty;
+            Application.logMessageReceived += HandleLog; 
         }
 
         void OnEnable()
@@ -36,7 +45,7 @@ namespace LearnXR.Core.Utilities
         public void LogInfo(string message)
         {
             ClearLines();
-            debugAreaText.text += $"<color=\"green\">{DateTime.Now:HH:mm:ss.fff} {message}</color>\n";
+            debugAreaText.text += $"<color=\"black\">{DateTime.Now:HH:mm:ss.fff} {message}</color>\n";
         }
 
         public void LogError(string message)
@@ -48,7 +57,7 @@ namespace LearnXR.Core.Utilities
         public void LogWarning(string message)
         {
             ClearLines();
-            debugAreaText.text += $"<color=\"yellow\">{DateTime.Now:HH:mm:ss.fff} {message}</color>\n";
+            debugAreaText.text += $"<color=\"blue\">{DateTime.Now:HH:mm:ss.fff} {message}</color>\n";
         }
 
         private void ClearLines()
@@ -57,6 +66,13 @@ namespace LearnXR.Core.Utilities
             {
                 debugAreaText.text = string.Empty;
             }
+        }
+
+        void HandleLog(string logString, string stackTrace, LogType type)
+        {
+            if (type == LogType.Log) LogInfo(">> " + logString);
+            if (type == LogType.Warning) LogWarning(">> " + logString);
+            if (type == LogType.Error) LogError(">> " + logString);
         }
     }
 }
