@@ -7,4 +7,4 @@
 * Script: InfoLineWriter.cs fills the base line with App Infos
 * included in the Unity-QuestVisionKit ()
 
-<img src="./pca_logger.jpg" widht="500">
+<img src="./pca_logger.jpg" widht="350">
