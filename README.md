@@ -2,7 +2,7 @@
 
 MixedReality devlopment @ FH JOANNEUM, Nischelwitzer 
 
-<img src="./pics/ball_music.jpg" width="500">
+<img src="./pics/ball_music.jpg" width="750">
 
 # Building Blocks Examples
 
